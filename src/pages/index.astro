@@ -1,14 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import Mail from "../components/icons/Mail.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <section class="w-full mx-auto lg:w-[740px] py-44">
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
-        Hi, soy Jerson <a
+<Layout
+  title="Portafolio de Jerson | Desarrollador y Programador Web"
+  description="Contrata a Jerson para crear tu apicacion web o movil"
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-30">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="https://i.pinimg.com/474x/44/27/b6/4427b659d7290eb30682215fbeff358c.jpg"
+        alt="logo"
+      />
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, soy Jerson <a
           href="https://www.linkedin.com/in/gerson-urrea-pereira-110925259/"
           target="_blank"
           rel="noopener"
@@ -17,10 +31,33 @@ import Badge from "../components/Badge.astro";
           <Badge>Disponible para trabajar</Badge></a
         >
       </h1>
-      <h2 class="text-2xl opacity-80">
-        Desarrollador Web Full Stack de Cali, Colombia. Especialiado en crear
-        soluciones unicas.
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span class="text-yellow-200/90">Desarrollador Web Full Stack.</span> De
+
+
+        <span class="text-red-200/90"> Cali, Colombia</span>
+        <span class="opacity-90">
+          apasionado por la creación de soluciones únicas y efectivas.
+        </span>
       </h2>
-    </section>
+      <ul>
+        <nav class="flex gap-x-2 mt-8 flex-wrap">
+          <SocialPill
+            href="https://www.linkedin.com/in/gerson-urrea-pereira-110925259/"
+          >
+            <LinkedInIcon class="w-4 h-4 md:w-6 md:h-6" />
+             Linkedin
+          </SocialPill>
+          <SocialPill href="https://github.com/JersonP2107">
+            <GitHubIcon class="w-4 h-4 md:w-6 md:h-6" />
+             GitHub
+          </SocialPill>
+          <SocialPill href="jersondev21@gmail.com">
+            <Mail class="w-4 h-4 md:w-6 md:h-6" />
+             jersondev21@gmail.com
+          </SocialPill>
+        </nav>
+      </ul>
+    </SectionContainer>
   </main>
 </Layout>
