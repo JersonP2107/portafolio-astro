@@ -6,6 +6,8 @@ import SocialPill from "../components/SocialPill.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import Mail from "../components/icons/Mail.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -22,7 +24,7 @@ import SectionContainer from "../components/SectionContainer.astro";
       <h1
         class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, soy Jerson <a
+        Hey, soy Jerson 🍿 <a
           href="https://www.linkedin.com/in/gerson-urrea-pereira-110925259/"
           target="_blank"
           rel="noopener"
@@ -58,6 +60,13 @@ import SectionContainer from "../components/SectionContainer.astro";
           </SocialPill>
         </nav>
       </ul>
+    </SectionContainer>
+    <SectionContainer id="Proyectos">
+      <h2 class="text-2xl font-semibold md-6 flex gap-x-3 items center">
+        <CodeIcon class="w-4 h-4 md:w-6 md:h-6" />
+         Proyectos
+      </h2>
+      <Projects />
     </SectionContainer>
   </main>
 </Layout>
