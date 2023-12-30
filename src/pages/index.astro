@@ -8,6 +8,7 @@ import Mail from "../components/icons/Mail.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import CodeIcon from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
+import PersonIcon from "../components/icons/Person.astro";
 ---
 
 <Layout
@@ -15,7 +16,7 @@ import Projects from "../components/Projects.astro";
   description="Contrata a Jerson para crear tu apicacion web o movil"
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-30">
+    <SectionContainer class="py-44 pb-20">
       <img
         class="rounded-full w-12 h-12 mb-4"
         src="https://i.pinimg.com/474x/44/27/b6/4427b659d7290eb30682215fbeff358c.jpg"
@@ -54,19 +55,36 @@ import Projects from "../components/Projects.astro";
             <GitHubIcon class="w-4 h-4 md:w-6 md:h-6" />
              GitHub
           </SocialPill>
-          <SocialPill href="jersondev21@gmail.com">
+          <SocialPill href="mailto:jersondev21@gmail.com">
             <Mail class="w-4 h-4 md:w-6 md:h-6" />
              jersondev21@gmail.com
           </SocialPill>
         </nav>
       </ul>
     </SectionContainer>
-    <SectionContainer id="Proyectos">
-      <h2 class="text-2xl font-semibold md-6 flex gap-x-3 items center">
-        <CodeIcon class="w-4 h-4 md:w-6 md:h-6" />
-         Proyectos
+    <SectionContainer class="py-40 pb-30" id="sobre-mi">
+      <h2 class="text-2xl font-semibold md-6 flex gap-x-3 pb-3 items center">
+        <PersonIcon class="w-4 h-4 md:w-6 md:h-6" />
+         Sobre Mi
       </h2>
-      <Projects />
+      <p class="text-lg lg:text-xl text-pretty max-w-[700px] opacity-80">
+        Como apasionado desarrollador web, me encanta la compleja danza entre la
+        lógica y la creatividad. Actualmente inmerso en el dinámico mundo de
+        Diseño UX/UI, mi especialidad se centra en React, donde combino la
+        tecnología con la innovación de forma fluida.
+        <br /><br />
+         Con un fervor por crear soluciones elegantes, navego por el paisaje
+        siempre cambiante del desarrollo de software. Mi viaje implica traducir
+        conceptos en código, crear experiencias de usuario sin fisuras y ampliar
+        constantemente los límites de lo posible.
+      </p>
     </SectionContainer>
   </main>
+  <SectionContainer id="proyectos">
+    <h2 class="text-2xl font-semibold md-6 flex gap-x-3 pb-3 items center">
+      <CodeIcon class="w-4 h-4 md:w-6 md:h-6" />
+       Proyectos
+    </h2>
+    <Projects />
+  </SectionContainer>
 </Layout>
