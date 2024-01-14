@@ -1,31 +1,10 @@
-# Astro Starter Kit: Basics
-
+# Portafolio con Astro
 ```sh
 npm create astro@latest -- --template basics
 ```
 
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
 ![just-the-basics](https://i.pinimg.com/736x/bf/cd/4c/bfcd4cd5e56b4ea190f40a881fbd90e5.jpg)
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
