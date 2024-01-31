@@ -12,10 +12,10 @@ import PersonIcon from "../components/icons/Person.astro";
 ---
 
 <Layout
-  title="Portafolio de Jerson | Desarrollador y Programador Web"
+  title="Portfolio de Jerson | Desarrollador y Programador Web"
   description="Contrata a Jerson para crear tu apicacion web o movil"
 >
-  <main class="px-4">
+  <main class="px-4 bg-white">
     <SectionContainer class="py-44 pb-20">
       <img
         class="rounded-full w-12 h-12 mb-4"
@@ -23,9 +23,9 @@ import PersonIcon from "../components/icons/Person.astro";
         alt="logo"
       />
       <h1
-        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, soy Jerson 🍿 <a
+        Hey, soy Jerson <a
           href="https://www.linkedin.com/in/gerson-urrea-pereira-110925259/"
           target="_blank"
           rel="noopener"
@@ -38,8 +38,7 @@ import PersonIcon from "../components/icons/Person.astro";
         <span
           class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
           >Desarrollador Web Full Stack.</span
-        > De Cali, Colombia apasionado por la creación de soluciones únicas y
-        efectivas.
+        > De Cali, Colombia apasionado por la creación de soluciones únicas y efectivas.
       </h2>
       <ul>
         <nav class="flex gap-x-2 mt-8 flex-wrap">
@@ -47,50 +46,65 @@ import PersonIcon from "../components/icons/Person.astro";
             href="https://www.linkedin.com/in/gerson-urrea-pereira-110925259/"
           >
             <LinkedInIcon class="w-4 h-4 md:w-6 md:h-6" />
-             Linkedin
+            Linkedin
           </SocialPill>
           <SocialPill href="https://github.com/JersonP2107">
             <GitHubIcon class="w-4 h-4 md:w-6 md:h-6" />
-             GitHub
+            GitHub
           </SocialPill>
           <SocialPill href="mailto:jersondev21@gmail.com">
             <Mail class="w-4 h-4 md:w-6 md:h-6" />
-             jersondev21@gmail.com
+            jersondev21@gmail.com
           </SocialPill>
         </nav>
       </ul>
     </SectionContainer>
-    <SectionContainer class="py-40 pb-30" id="sobre-mi">
+    <SectionContainer class="py-20 pb-30" id="proyectos">
+      <h2 class="text-2xl font-semibold md-6 flex gap-x-3 pb-3 items center">
+        <CodeIcon class="w-4 h-4 md:w-6 md:h-6" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+    <SectionContainer class="py-20 pb-40" id="sobre-mi">
       <h2 class="text-2xl font-semibold md-6 flex gap-x-3 pb-3 items center">
         <PersonIcon class="w-4 h-4 md:w-6 md:h-6" />
-         Sobre Mi
+        Sobre Mi
       </h2>
       <p class="text-lg lg:text-xl text-pretty max-w-[700px">
-        Como apasionado <span
+        ¡Hola! Soy Jerson, un <span
           class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
-          >Desarrollador Web</span
-        >, me encanta la compleja danza entre la lógica y la creatividad.
-        Actualmente inmerso en el dinámico mundo de <span
-          class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
-          >Diseño UX/UI.</span
-        >
-        <br /><br />
-         Con un fervor por <span
-          class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
-          >Crear Soluciones Elegantes</span
-        >, navego por el paisaje siempre cambiante del desarrollo de software.
-        Mi viaje implica traducir conceptos en código, <span
-          class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
-          >Crear Experiencias de Usuario sin Fisuras
-        </span> y ampliar constantemente los límites de lo posible.
+          >Técnico en Sistemas Informáticos</span
+        > con años de experiencia ampliando mis conocimientos en el mundo de la tecnología
+        de la información. Después de dedicarme a diversas áreas, descubrí que mi
+        verdadera pasión es el desarrollo web.
       </p>
+
+      <br />
+      <p class="text-lg lg:text-xl text-pretty max-w-[700px">
+        Mi objetivo es iniciar mi carrera profesional en el campo del <span
+          class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
+          >Desarrollo Web</span
+        >, integrándome a una empresa que me brinde la oportunidad de aplicar
+        mis
+        <span
+          class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
+        >
+          conocimientos y seguir creciendo</span
+        >, tanto a nivel personal como profesional, con el fin de alcanzar los
+        mejores resultados posibles.
+      </p>
+      <br />
+      <p class="text-lg lg:text-xl text-pretty max-w-[700px">
+        Y entre una de mis habilidades se encuentra la de poder aprender con
+        gran
+        <span
+          class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400"
+        >
+          facilidad y rapidez</span
+        >. También me logro destacar por mi personalidad amigable y muy activa.
+      </p>
+      <p></p>
     </SectionContainer>
   </main>
-  <SectionContainer id="proyectos">
-    <h2 class="text-2xl font-semibold md-6 flex gap-x-3 pb-3 items center">
-      <CodeIcon class="w-4 h-4 md:w-6 md:h-6" />
-       Proyectos
-    </h2>
-    <Projects />
-  </SectionContainer>
 </Layout>
